@@ -1,0 +1,249 @@
+@import url("https://fonts.google.com/specimen/Inter");
+/* Box Model Hack */
+* {
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Clear fix hack */
+  .clearfix:after {
+       content: ".";
+       display: block;
+       clear: both;
+       visibility: hidden;
+       line-height: 0;
+       height: 0;
+  }
+  
+  .clear {
+      clear: both;
+  }
+  
+  /******************************************
+  /* BASE STYLES
+  /*******************************************/
+
+  p{
+    font-size: 15px;
+  }
+  :root{
+    /*primary colors*/
+    --soft-orange: #e9ab53;
+    --Soft-red: #f15e50;
+    /*Neutral colors*/
+    --Off-white: #fffdfa;
+    --grayish-blue: #c5c6ce;
+    --dark-grayish-blue: #5d5f79;
+    --very-dark-blue: #00001a;
+  }
+
+
+  body {
+    background: var(--Off-white);
+    overflow-x: hidden;
+  }
+  
+  /******************************************
+  /* LAYOUT
+  /*******************************************/
+
+  /*navbar*/
+  nav > img{
+    float: left;
+    margin: 60px 0 40px 5%;
+    width: 50px;
+    height: 30px;
+  }
+
+  #navItems{
+    margin: 60px 5% 40px 0;
+    float: right;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 400px;
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--dark-grayish-blue);
+  }
+
+  #navItems > *:hover{
+    color: var(--soft-orange);
+    cursor: pointer;
+  }
+
+  /*main*/
+  main{
+    clear: both;
+    display: grid;
+    grid-template-columns: 60% 25%;
+    column-gap: 3%;
+    margin: 0 13% 5% 5%;
+    grid-template-areas: "main" "side";
+  }
+
+  /*hero*/
+  .hero{
+    display: grid;
+    grid-template-columns: repeat(2, 60%);
+    grid-template-rows: repeat(2,50%);
+    column-gap: 5%;
+    row-gap: 5%;
+    grid-template-areas: 
+    "image image"
+    "heading article";
+    grid-area: main;
+  }
+
+  #heroImg{
+    grid-area: image;
+    display: block;
+    width: 100%;
+    max-height: 100%;
+    
+  }
+
+  .hero > div:nth-child(2){
+    font-size: 45px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 1000;
+    grid-area: heading;
+  }
+
+  .hero > div:nth-child(3){
+    grid-area: article;
+    line-height: 24px;
+    font-weight: 400;
+    margin-left: 20%;
+    margin-right: 20px;
+    color: var(--dark-grayish-blue);
+  }
+
+  .hero > div:nth-child(3) > button{
+    padding: 10px 30px;
+    line-height: 24px;
+    font-weight: 700;
+    color: var(--Off-white);
+    background: var(--Soft-red);
+    margin-top: 30px;
+    border: none;
+  }
+
+  .hero > div:nth-child(3) > button:hover{
+    background: var(--very-dark-blue);
+    cursor: pointer;
+  }
+
+  /*side*/
+  .side{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100%;
+    margin-right: -90%;
+    margin-left: 70%;
+    height: 90%;
+    background: var(--very-dark-blue);
+    color: var(--Off-white)
+  }
+
+  .side > h2{
+    margin: 20px 0 20px 20px;
+    font-size: xx-large;
+    color: var(--soft-orange);
+  }
+
+  .side > article{
+    margin: 20px;
+  }
+
+  .side > article > h3{
+    font-weight: 800;
+    line-height: 50px;
+    margin-top: -30px;
+  }
+
+  .side > article > h3:hover{
+    color: var(--soft-orange);
+    cursor: pointer;
+  }
+
+  .side > article > p{
+    font-weight: 400;
+    line-height: 20px;
+    padding-bottom: 50px;
+    color: var(--grayish-blue);
+  }
+
+  .side > article:nth-child(2) > p{
+    border-bottom: 1px solid var(--grayish-blue);
+  }
+
+  .side > article:nth-child(3) > p{
+    border-bottom: 1px solid var(--grayish-blue);
+  }
+
+  .foot{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 90px;
+    margin-top: 50px;
+    min-width: 100%;
+  }
+
+  .foot > article{
+    width: 380px;
+    max-height: 254px;
+  }
+
+  #one, #two, #three{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+  }
+
+  #one >div > img{
+    width: 100px;
+    max-height: 254px;
+    object-fit: cover;
+  }
+
+  .last{
+    padding-left: 20px;
+  }
+
+  .last > h4{
+    font-size: 32px;
+    color: var(--grayish-blue);
+  }
+
+  .last > h3{
+    line-height: 32px;
+    font-weight: 800;
+  }
+
+  .last > h3:hover{
+    color: var(--soft-orange);
+    cursor: pointer;
+  }
+
+  .last > p{
+    color: var(--dark-grayish-blue);
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  #two >div > img{
+    width: 100px;
+    max-height: 254px;
+    object-fit: cover;
+  }
+
+  #three >div > img{
+    width: 100px;
+    max-height: 254px;
+    object-fit: cover;
+  }

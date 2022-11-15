@@ -71,7 +71,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [News Homepage page](https://frontendchallengesvskt.netlify.app/skilled%20elearning%20landing%20page/)
+- Live Site URL: [News Homepage page](https://frontendchallengesvskt.netlify.app/news%20homepage/index.html)
 
 ## My process
 

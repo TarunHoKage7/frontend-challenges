@@ -44,13 +44,35 @@
   section{
     background: var(--beige);
     color: var(--black);
-    
+    padding: 50px;
+    margin: 30px;
   }
   /******************************************
   /* LAYOUT
   /*******************************************/
   
+  main{
+    background: var(--white);
+  }
 
-  /******************************************
-  /* ADDITIONAL STYLES
-  /*******************************************/
+  header > h1{
+    text-align: center;
+    margin: 50px;
+    padding: 30px;
+  }
+
+  .title a, a:link, a:visited, a:hover, a:active{
+    text-decoration: none;
+    font-size: 28px;
+    font-weight: 800;
+    line-height: 20px;
+    color: var(--black);
+    padding: 30px;
+  }
+
+    a + div{
+    max-width: 300px;
+    max-height: 300px;
+    object-fit: contain;
+    margin-left: 5%;
+  }

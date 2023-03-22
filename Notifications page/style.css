@@ -1,0 +1,64 @@
+/* Box Model Hack */
+* {
+    box-sizing: border-box;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Clear fix hack */
+  .clearfix:after {
+       content: ".";
+       display: block;
+       clear: both;
+       visibility: hidden;
+       line-height: 0;
+       height: 0;
+  }
+  
+  .clear {
+      clear: both;
+  }
+  
+  /******************************************
+  /* BASE STYLES
+  /*******************************************/
+  :root {
+    --White: #ffffff;
+    --Very-light-grayish-blue: #f7fafd;
+    --Light-grayish-blue : #e5effa;
+    --Light-grayish-blue : #dde7ee;
+    --Grayish-blue: #939dae;
+    --Dark-grayish-blue: #5e6778;
+    --Very-dark-blue: #1c202b;
+}
+
+  body {
+    margin:0;
+    padding: 0;
+    line-height: 1.12em;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+  
+  footer{
+    padding: 20px;
+  }
+
+  header{
+    padding: 20px;
+  }
+
+  /******************************************
+  /* LAYOUT
+  /*******************************************/
+  
+
+
+
+  /******************************************
+  /* ADDITIONAL STYLES
+  /*******************************************/
+  
+
+
